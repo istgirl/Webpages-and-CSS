@@ -1,74 +1,121 @@
-header{
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/background image 3.jpg");
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.banner{
+	width: 100%;
 	height: 100vh;
+	background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("../images/backgrouund.jpg");
+	height: 100vh;
+	background-size: cover;
 	background-position: center;
 }
 
-ul{
-	list-style-type: none;
-	float: right;
-	margin-top: 25px;
-	font-family: Century gothic;
+.navbar {
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-ul li{
-	display: inline-block; 
+.logo{
+	width: 120px;
+	cursor: pointer;
 }
 
-ul li a{
+.navbar ul li{
+	list-style: none;
+	display:inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+
+.navbar ul li a{
 	text-decoration: none;
-	color: #FFFFFF;
-	padding: 5px 20px;
-	border: 1px solid transparent;
-	transition: 0.6s ease; 
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: verdana;
 }
 
-
-ul li a:hover{
-   background-color: #fff;
-   color: #000;	
-}
-
-ul li.active a{
-	background-color: #fff;
-   color: #000;	
-}
-
-.main{
-	max-width: 1200px;
-	margin:auto;
-}
-
-.title{
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #FF7600;
 	position: absolute;
-	top: 23%;
-	left: 33%;
-	transform: translate(-50%-50%);
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
 }
 
-.title h1{
-	font-size: 70px;
-	font-family: century gothic;
-	color: #FFF;
+.navbar ul li:hover::after{
+	width: 100%;
 }
 
-.button{
+.content{
+	width: 100%;
 	position: absolute;
-	top: 49%;
-	left: 37.5%;
-	transform: translate(-50%-50%);
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #ffffff;
 }
 
-.btn{
-	font-family: century gothic;
-	border:1px solid #fff;
-	padding: 10px 30px;
-	color: #FFFFFF;
+.content h1{
+	font-size: 50px;
+	margin-top:80px;
+	font-family: verdana;
+}
+
+.content p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 21px;
+	font-family: verdana;
+}
+
+button{
+	width:200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight:bold;
+	border: 2px solid #FF7600;
+	background: transparent;
+	color: #ffffff;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+span{
+	background: #FF7600;
+	height: 100%;
+	width: 0;
+	border-radius:25px;
+	position: absolute;
+	left:0;
+	bottom:0;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+button:hover span{
+	width: 100%;
+}
+
+button:hover{
+	border: none;
+}
+
+a{
 	text-decoration: none;
-	transition: 0.6s ease;
-}
-
-.btn:hover {
-	background-color: #fff;
-   color: #000;	
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: verdana;
 }
