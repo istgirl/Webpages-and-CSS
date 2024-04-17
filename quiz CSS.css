@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #a9a9a9; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .box {
+        width: 100%; /* Adjust the width of the box */
+        max-width: 600px; /* Set a maximum width to maintain responsiveness */
+        margin: 0 auto; /* Center the box horizontally */
+        padding: 30px; /* Adjust the padding inside the box */
+        background-color: #fff; 
+        border-radius: 10px; 
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .container h1 {
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+  }
+  
+  .quiz {
+    padding: 20px 0;
+  }
+  
+  .quiz h2 {
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+    margin-bottom: 20px; 
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+  }
+  
+  .btn {
+    background: #001e4d; /* Button background color */
+    color: #fff;
+    font-weight: 500;
+    width: calc(50% - 5px); /* Adjust button width */
+    border: none;
+    padding: 12px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn:hover:not([disabled]) {
+    background: #004080; /* Darker shade on hover */
+  }
+  
+  .btn:disabled {
+    background: #ccc;
+    color: #999;
+    cursor: no-drop;
+  }
+  
+  .next-btn {
+    background: #ff7600; /* Different color for Next button */
+    color: #fff;
+    font-weight: 500;
+    width: 100%; /* Make next button full width */
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #next-btn:hover {
+    background: #ff904f; /
+  }
+  
+  .watch-link {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column; /* Display options vertically */
+    align-items: flex-start; /* Align options to the left */
+}
+
+.option {
+    margin-bottom: 10px; /* Add spacing between options */
+    padding: 10px 20px; 
+    background-color: #f2f2f2; 
+    border: 1px solid #ccc; /* Add border to options */
+    border-radius: 5px; /* Add rounded corners to options */
+    cursor: pointer; /* Change cursor to pointer when hovering over options */
+    transition: background-color 0.3s; 
+}
+
+.option:hover {
+    background-color: #e0e0e0; /* Darken background color of options on hover */
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Add margin to the top of the button container */
+}
