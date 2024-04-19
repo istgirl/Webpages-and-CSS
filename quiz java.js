@@ -1,19 +1,34 @@
 const questions = [
     {
-        question: "What is the capital of France?",
-        options: ["Paris", "London", "Berlin", "Rome"],
+        question: "How confident do you feel when doing maths?",
+        options: ["super confident", "very confident", "somewhat confident", "not confident"],
     },
     {
-        question: "What is the largest planet in our solar system?",
-        options: ["Mars", "Jupiter", "Earth", "Venus"],
-    }
-    // Add more questions here
+        question: "How confident do you feel when doing english?",
+        options: ["super confident", "very confident", "somewhat confident", "not confident"],
+    },
+    {
+        question: "What math textbook does you school follow?",
+        options: ["new century", "cambridge", "signpost", "other"],
+    },
+    {
+        question: "When it comes to writting what do you LEAST prefer?",
+        options: ["persuasive writting", "creative writting", "recount writting", "other"],
+    },
+    {
+        question: "Why are you looking for a tutor?",
+        options: ["selective test", "OC test", "HSC", "general"],
+    },
+    {
+        question: "What year group are you in?",
+        options: ["year 1-3", "year 4-6", "year 7-9", "year 10-12"],
+    },
 ];
 
 let currentQuestion = 0;
 const questionElement = document.getElementById('question');
 const optionsElement = document.getElementById('options');
-const nextButton = document.getElementById('nextButton');
+const nextButton = document.getElementById('next-btn');
 const startButton = document.getElementById('startButton');
 const quizContainer = document.querySelector('.quiz-container');
 const resultContainer = document.getElementById('resultContainer');
@@ -29,7 +44,7 @@ function loadQuestion() {
         button.textContent = option;
         button.classList.add('option');
         button.onclick = function() {
-            nextButton.style.display = 'block'; // Display the next question button after an option is selected
+            nextButton.style.display = 'block';
         };
         optionsElement.appendChild(button);
     });
@@ -39,11 +54,11 @@ function nextQuestion() {
     currentQuestion++;
     if (currentQuestion < questions.length) {
         loadQuestion();
-        nextButton.style.display = 'none'; // Hide the next question button for the next question
+        nextButton.style.display = 'none'; 
     } else {
         quizContainer.style.display = 'none';
         resultContainer.style.display = 'block';
-        homeButton.style.display = 'block'; // Display the "Back to Homepage" button when the quiz is completed
+        homeButton.style.display = 'block'; 
     }
 }
 
@@ -56,9 +71,10 @@ function startQuiz() {
 
 
 function goToHomepage() {
-    window.location.href = "homepage.html"; // Replace "homepage.html" with your actual homepage URL
+    window.location.href = "homepage.html"; 
 }
 
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', nextQuestion);
 homeButton.addEventListener('click', goToHomepage);
+

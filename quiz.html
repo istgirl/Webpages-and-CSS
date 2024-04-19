@@ -6,21 +6,24 @@
   <title>Extreme Education Quiz</title>
   <link href="quiz CSS.css" rel="stylesheet">
 </head>
+
 <body>
   <div class="container box">
-    <h1>Welcome to Extreme Education Enrollment Quiz</h1>
+    <h1>Welcome to Extreme Education <br>Enrollment Quiz</h1>
     <div class="start-quiz-container">
       <p>This quiz will help us understand your knowledge level and how we can assist you better. Let's get started!</p>
       <button id="startButton" class="btn">Start Quiz</button>
     </div>
+    
     <div class="quiz-container" style="display:none;">
-      <h2>Enrollment Quiz</h2>
       <div class="question" id="question"></div>
       <div class="options" id="options"></div>
-      <button id="nextButton" class="btn" style="display:none;">Next Question</button>
+      <button id="next-btn" class="btn" style="display:none;">Next Question</button>
     </div>
+
     <div class="result-container" id="resultContainer" style="display:none;">
-      <p id="resultText">Thank You! Your results will be analysed, and we will be in touch if you have been enrolled.</p>
+      <h1>Thank You!</h1>  
+      <p id="resultText"> Your results will be analysed, we will be in touch with you, if you have been enrolled.</p>
       <button id="homeButton" class="btn">Back to Homepage</button>
     </div>
   </div>
