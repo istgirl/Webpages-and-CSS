@@ -15,6 +15,8 @@ body {
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
+    min-height: 100vh;
+    margin-bottom: 50px; 
 }
 
 .navbar {
@@ -47,6 +49,7 @@ body {
 }
 
 
+
 .navbar ul li::after{
 	content: '';
 	height: 3px;
@@ -73,11 +76,6 @@ h3 {
     color: #000000; 
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
-}
-
-p {
-    color: #000000;
-    margin-top: 20px;
 }
 
 .container {
@@ -167,9 +165,66 @@ button:hover {
 
     p {
         margin-top: 10px;
+        color: #000000;
+        margin-top: 20px;
     }
 
     .container {
         margin-top: 100px;
+    }
+}
+
+/*footer start*/
+
+footer {
+	text-align: center;
+	padding: 10px 0;
+	background-color: #444444;
+	color: white;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    text-align: center;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+	text-align: center; 
+}
+
+.social-icons a {
+    display: inline-block; 
+    margin: 0 5px; 
+}
+
+.p2 {
+	font-size: 2px;
+}
+
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/*footer end*/
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        padding: 15px 0;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .navbar ul {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        margin: 10px; 
     }
 }

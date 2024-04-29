@@ -84,22 +84,61 @@ body {
 .youtube-video iframe,
 .map-container iframe {
     width: 100%;
-    height: 250px; /* Adjust the height of the map and video */
+    height: 250px; 
     border: none;
 }
 
 p {
-    font-size: 13px;
+    font-size: 10px;
     font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 20px;
 }
 
 .adjustable-writing {
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .adjustable-writing h3 {
     margin-bottom: 10px;
 }
+
+/*footer start*/
+
+footer {
+	text-align: center;
+	padding: 10px 0;
+	background-color: #444444;
+	color: white;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    text-align: center;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+	text-align: center; 
+}
+
+.social-icons a {
+    display: inline-block; 
+    margin: 0 5px; 
+}
+
+p {
+	font-size: 11px;
+}
+
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/*footer end*/
 
 @media (max-width: 768px) {
     .container {
@@ -111,5 +150,26 @@ p {
         margin: 0;
         margin-bottom: 20px;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        padding: 15px 0;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .navbar ul {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        margin: 10px; 
     }
 }
