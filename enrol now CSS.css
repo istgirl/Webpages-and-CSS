@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #a9a9a9;
+}
+
+.banner{
+	width: 100%;
+	height: 100vh;
+	background-color: #a9a9a9;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.navbar {
+	width: 85%;
+	margin: auto;
+	padding: 25px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.logo{
+	width: 120px;
+	cursor: pointer;
+}
+
+.navbar ul li{
+	list-style: none;
+	display:inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #FF7600;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+	width: 100%;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 10px auto 10px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+h3 {
+    color: #000000; 
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    color: #000000;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -45px;
+    margin-bottom: -30px;
+    padding: 40px;
+}
+
+.card {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    border-radius: 15px;
+    background: #e3e3e3;
+    box-shadow: 16px 16px 32px #000000, -16px -16px -16px #000000;
+    padding: 40px;
+    width: 400px;
+}
+
+.inputBox {
+    position: relative;
+    width: 250px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.inputBox input,
+.inputBox select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: #000000;
+    font-size: 1em;
+    background: transparent;
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    transition: 0.1s;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 10px;
+    bottom: 25px;
+    font-size: 12px;
+    color: #000000;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputBox input:focus~span,
+.inputBox select:focus~span {
+    bottom: 45px;
+    font-size: 0.8em;
+}
+
+button {
+    height: 45px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .main {
+        margin-top: 100px;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+
+    .container {
+        margin-top: 100px;
+    }
+}

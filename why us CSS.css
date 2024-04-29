@@ -1,18 +1,15 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Body styles */
 body {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: Montserrat;
-    background-color: #a9a9a9; /* Set the desired background color for the body */
+    font-family: 'Poppins', sans-serif;
+    background-color: #a9a9a9;
 }
 
 /* Banner styles */
@@ -25,8 +22,8 @@ body {
 
 .navbar {
     width: 85%;
-    margin: auto;
-    padding: 35px 0;
+    margin: 5px auto;
+    padding: 15px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,7 +40,9 @@ body {
 }
 
 .navbar ul li {
-    margin-right: 20px;
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
     position: relative;
 }
 
@@ -51,7 +50,7 @@ body {
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
-    font-family: verdana;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar ul li::after {

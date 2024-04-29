@@ -1,26 +1,23 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #a9a9a9; /* Set background color for the entire page */
+    background-color: #a9a9a9;
 }
 
 .banner {
-    width: 100%;
-    height: 100vh;
     background-color: #a9a9a9;
-    background-size: cover;
-    background-position: center;
-	height: auto;
+    padding-bottom: 20px;
 }
 
 .navbar {
     width: 85%;
-    margin: auto;
-    padding: 35px 0;
+    margin: 2px auto;
+    padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,7 +31,7 @@ body {
 .navbar ul li {
     list-style: none;
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 15px;
     position: relative;
 }
 
@@ -42,7 +39,6 @@ body {
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
-    font-family: verdana;
 }
 
 .navbar ul li::after {
@@ -60,50 +56,60 @@ body {
     width: 100%;
 }
 
-.slideshow-container {
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2px;
+}
+
+.youtube-video,
+.map-container {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 1.5cm; /* Adjust the gap between boxes */
+}
+
+.youtube-video h2,
+.map-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.youtube-video iframe,
+.map-container iframe {
     width: 100%;
-    height: 40vh;
-    position: relative;
+    height: 250px; /* Adjust the height of the map and video */
+    border: none;
 }
 
-.mySlides {
-    display: none;
-    width: 100%;
-    height: 100%;
+p {
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.adjustable-writing {
+    text-align: center;
 }
 
-.numbertext {
-    color: #000000;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+.adjustable-writing h3 {
+    margin-bottom: 10px;
 }
 
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
     }
-    to {
-        opacity: 1
-    }
-}
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-    .text {
-        font-size: 11px
+    .youtube-video,
+    .map-container {
+        margin: 0;
+        margin-bottom: 20px;
+        width: 100%;
     }
 }
