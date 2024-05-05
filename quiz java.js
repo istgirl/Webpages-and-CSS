@@ -1,27 +1,27 @@
 const questions = [
     {
         question: "How confident do you feel when doing maths?",
-        options: ["super confident", "very confident", "somewhat confident", "not confident"],
+        options: ["Super Confident", "Very Confident", "Somewhat Confident", "Not Confident"],
     },
     {
         question: "How confident do you feel when doing english?",
-        options: ["super confident", "very confident", "somewhat confident", "not confident"],
+        options: ["Super Confident", "Very Confident", "Somewhat Confident", "Not Confident"],
     },
     {
         question: "What math textbook does you school follow?",
-        options: ["new century", "cambridge", "signpost", "other"],
+        options: ["New Century", "Cambridge", "Signpost", "Other"],
     },
     {
         question: "When it comes to writting what do you LEAST prefer?",
-        options: ["persuasive writting", "creative writting", "recount writting", "other"],
+        options: ["Persuasive Writting", "Creative Writting", "Recount Writting", "Other"],
     },
     {
         question: "Why are you looking for a tutor?",
-        options: ["selective test", "OC test", "HSC", "general"],
+        options: ["Selective Test", "OC Test", "HSC", "General"],
     },
     {
         question: "What year group are you in?",
-        options: ["year 1-3", "year 4-6", "year 7-9", "year 10-12"],
+        options: ["Year 1-3", "Year 4-6", "Year 7-9", "Year 10-12"],
     },
 ];
 
@@ -64,8 +64,8 @@ function nextQuestion() {
 
 function startQuiz() {
     document.querySelector('.quiz-container').style.display = 'block';
-    document.querySelector('.start-quiz-container').style.display = 'none'; // Hide the start quiz container
-    document.querySelector('h1').style.display = 'none'; // Hide the heading
+    document.querySelector('.start-quiz-container').style.display = 'none'; 
+    document.querySelector('h1').style.display = 'none'; 
     loadQuestion();
 }
 
