@@ -189,23 +189,25 @@ a{
 /*footer end*/
 
 @media screen and (max-width: 768px) {
+
+
     .navbar {
         width: 100%;
         padding: 15px 0;
         flex-direction: column;
-        align-items: center;
+        align-items: center; 
     }
 
     .navbar ul {
         margin-top: 15px;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap; 
         justify-content: center;
         text-align: center;
     }
 
     .navbar ul li {
-        margin: 10px;
+        margin: 10px; 
     }
 
     .banner {
