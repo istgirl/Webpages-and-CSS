@@ -72,19 +72,26 @@ body {
     margin-top: -10px;
 }
 
-h3 {
+.card h3 {
     color: #000000; 
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: -20px;
+}
+
+.card p {
+    font-size: 14px;
+    text-align: center;
+    font-size: 12px;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -45px;
-    margin-bottom: -30px;
-    padding: 40px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+    padding: 25px;
 }
 
 .card {
@@ -128,6 +135,7 @@ h3 {
     color: #000000;
     text-transform: uppercase;
     transition: 0.5s;
+    font-family: 'Poppins', sans-serif;
 }
 
 .inputBox input:focus~span,
@@ -157,10 +165,6 @@ button:hover {
 @media only screen and (max-width: 768px) {
     .navbar {
         padding: 10px 0;
-    }
-
-    .main {
-        margin-top: 100px;
     }
 
     p {
@@ -197,8 +201,8 @@ footer {
     margin: 0 5px; 
 }
 
-.p2 {
-	font-size: 2px;
+footer p {
+	font-size: 11px;
 }
 
 a{
