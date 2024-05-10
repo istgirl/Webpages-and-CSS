@@ -30,7 +30,7 @@ body {
 
 .container h1 {
     font-size: 25px;
-    color: #001e4d;
+    color: #000000;
     font-weight: 600;
     border-bottom: 1px solid #333;
     padding-bottom: 15px;
@@ -50,7 +50,7 @@ body {
 }
 
 .btn {
-    background: #001e4d; 
+    background:#FF7600; 
     color: #fff;
     font-weight: 500;
     width: calc(50% - 5px); 
@@ -85,7 +85,7 @@ body {
 }
 
 #next-btn {
-    background: #001e4d; 
+    background: #FF7600; 
     color: #fff;
     font-weight: 500;
     width: 100%;
@@ -122,5 +122,5 @@ p{
 }
 
 #result-container {
-    text-align: center; /* Center the contents horizontally */
+    text-align: center; 
 }
