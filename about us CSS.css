@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -61,14 +62,11 @@ body {
     width: 100%;
 }
 
-/* end of navbar */
-
 .header {
-    padding-right: 0%;
     text-align: center;
     background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(../Images/aboutus\ background\ img.jpg);
     background-repeat: no-repeat;
-    padding: 280px;
+    padding: 280px 0;
     background-attachment:fixed;
     background-size: cover;
     font-size: 25px;
@@ -83,10 +81,11 @@ body {
     align-items: flex-start;
     margin: 0 auto;
     max-width: 1200px;
-    padding: 2px;
-    height: 84vh;
+    padding: 20px 2px 40px;
+    height: auto; 
     overflow: auto;
-    margin-top: 40px;
+    margin: 20px auto 0;
+    margin-bottom: 15px;
 }
 
 .youtube-video,
@@ -133,33 +132,33 @@ h2 {
 /*dropdown start*/
 
 .dropdown {
-	position: relative;
+    position: relative;
 }
 
 .dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #7a7a7a;
-	min-width: 160px;
-	z-index: 4;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-	border-radius: 5px;
+    display: none;
+    position: absolute;
+    background-color: #7a7a7a;
+    min-width: 160px;
+    z-index: 4;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
 }
 
 .dropdown-content a{
-	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-	transition: background-color 0.3s;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
 }
 
 .dropdown-content a:hover {
-	background-color: #a9a9a9;
+    background-color: #a9a9a9;
 }
 
 .dropdown:hover .dropdown-content {
-	display: block;
+    display: block;
 }
 
 /*dropdown end*/
@@ -168,10 +167,10 @@ h2 {
 /*footer start*/
 
 footer {
-	text-align: center;
-	padding: 10px 0;
-	background-color: #444444;
-	color: white;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #444444;
+    color: white;
     position: fixed; 
     bottom: 0; 
     width: 100%; 
@@ -180,7 +179,7 @@ footer {
 
   .social-icons {
     margin-top: 10px;
-	text-align: center; 
+    text-align: center; 
 }
 
 .social-icons a {
@@ -189,12 +188,12 @@ footer {
 }
 
 p {
-	font-size: 11px;
+    font-size: 11px;
 }
 
 a{
-	text-decoration: none;
-	color: #ffffff;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 /*footer end*/
@@ -202,6 +201,7 @@ a{
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        padding-top: 40px; 
     }
 
     .youtube-video,
@@ -210,12 +210,14 @@ a{
         margin-bottom: 20px;
         width: 100%;
     }
-}
 
-@media screen and (max-width: 768px) {
+    .header {
+        padding: 180px 0; 
+    }
+
     .navbar {
         width: 100%;
-        padding: 15px 0;
+        padding: 10px 0;
         flex-direction: column;
         align-items: center; 
     }

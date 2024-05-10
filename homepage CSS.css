@@ -122,6 +122,16 @@ a{
 	font-family: 'Poppins', sans-serif;
 }
 
+
+
+
+
+.dropdown-content a:hover {
+    background-color: #a9a9a9;
+}
+
+
+
 /*dropdown start*/
 
 .dropdown {
@@ -152,6 +162,10 @@ a{
 
 .dropdown:hover .dropdown-content {
 	display: block;
+}
+
+.show-dropdown {
+    display: block;
 }
 
 /*dropdown end*/
