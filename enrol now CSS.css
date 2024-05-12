@@ -5,8 +5,12 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
     background-color: #a9a9a9;
 }
+
 
 .banner{
 	width: 100%;
@@ -125,6 +129,7 @@ body {
     margin-top: -50px;
     margin-bottom: -50px;
     padding: 25px;
+    flex-direction: column;
 }
 
 .card {
@@ -141,9 +146,18 @@ body {
     width: 400px;
 }
 
+.inputBox input:focus,
+.inputBox select:focus {
+    outline: none; 
+    border-color: #FF7600; 
+}
+
+
 .inputBox {
     position: relative;
-    width: 250px;
+    width: 300px;
+    Max-width: 250px;
+    margin-bottom: -5px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -158,18 +172,28 @@ body {
     border-left: 2px solid #000000;
     border-bottom: 2px solid #000000;
     transition: 0.1s;
+    background: transparent;
+    border: 2px solid #000000; 
+    border-radius: 5px; 
+    transition: border-color 0.3s;
 }
+
+.inputBox select {
+    width: 275px;
+}
+
 
 .inputBox span {
     position: absolute;
     left: 10px;
-    bottom: 25px;
+    bottom: 15px;
     font-size: 12px;
     color: #000000;
     text-transform: uppercase;
     transition: 0.5s;
     font-family: 'Poppins', sans-serif;
 }
+
 
 .inputBox input:focus~span,
 .inputBox select:focus~span {
@@ -180,19 +204,20 @@ body {
 button {
     height: 45px;
     width: 100px;
-    border-radius: 5px;
+    border-radius: 15px;
     border: 2px solid #000000;
     cursor: pointer;
     background-color: transparent;
     transition: 0.5s;
     text-transform: uppercase;
     font-size: 10px;
-    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
 }
 
 button:hover {
     background-color: #ffffff;
-    color: #ffffff;
+    color:  #000000;
 }
 
 footer {
