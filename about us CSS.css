@@ -66,7 +66,7 @@ body {
     text-align: center;
     background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(../Images/aboutus\ background\ img.jpg);
     background-repeat: no-repeat;
-    padding: 280px 0;
+    padding: 250px 0;
     background-attachment:fixed;
     background-size: cover;
     font-size: 25px;
@@ -81,7 +81,7 @@ body {
     align-items: flex-start;
     margin: 0 auto;
     max-width: 1200px;
-    padding: 40px 2px 60px;
+    padding: 40px 2px 72px; 
     height: auto; 
     overflow: auto;
     margin: 20px auto 0;

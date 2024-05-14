@@ -28,6 +28,7 @@
         <!--dropdown button end-->
         
         <li><a href="tutors.html"> TUTORS </a></li>
+        <li><a href="enrol now.html">ENROL</a></li>
         <li><a href="quiz.html">TAKE QUIZ</a></li>
         <li><a href="about us.html">ABOUT US</a></li>
         <li><a href="why us.html">WHY US</a></li>
@@ -35,31 +36,40 @@
 		</ul>
       </div>
           
-          <div class="container">
-              <div class="card">
-
-                <h3>Enrol Now!</h3><p>Please fill out the form below! We will contact you ASAP. Prior to filling out this form please engage with the quiz found on our website. </p>
-
-                  <div class="inputBox">
-                      <input type="text" required="required" autocomplete="name">
-                      <span>Child's FULL Name</span> 
-                  </div>
-                  <div class="inputBox">
-                      <input type="email" required="required" autocomplete="name">
-                      <span>Parent's Email</span>
-                  </div>
-                  <div class="inputBox">
-                      <select required="required">
-                          <option value="" disabled selected>Choose year group</option>
-                          <option value="option1">year 1-3</option>
-                          <option value="option2">year 4-6</option>
-                          <option value="option3">years 7-9</option>
-                          <option value="option4">years 10-12</option>
-                      </select>
-                  </div>
-                  <button type="button" onclick="alert('Thank you for choosing Extreme Education')">Enrol</button>
-              </div>
-          </div>
+      <div class="container">
+        <div class="card">
+            <h3>Enrol Now!</h3>
+            <p>Please fill out the form below! We will contact you ASAP. Prior to filling out this form please engage with the quiz found on our website.</p>
+            <form id="enrolForm">
+                <div class="inputBox">
+                    <input type="text" required="required" autocomplete="name" id="childName" placeholder="child's name">
+                </div>
+                <div class="inputBox">
+                    <input type="email" required="required" autocomplete="email" id="parentEmail" placeholder="parent's email">
+                </div>
+                <div class="inputBox">
+                    <select required="required" id="yearGroup">
+                        <option value="" disabled selected>Choose year group</option>
+                        <option value="option1">year 1-3</option>
+                        <option value="option2">year 4-6</option>
+                        <option value="option3">years 7-9</option>
+                        <option value="option4">years 10-12</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <select required="required" id="subjects">
+                        <option value="" disabled selected>Choose subject</option>
+                        <option value="option1">English</option>
+                        <option value="option2">Mathematics</option>
+                        <option value="option3">English & Mathematics</option>
+                    </select>
+                </div>
+                <button type="submit" onclick="alert('Thank you for joining')">Enrol</button>
+            </form>
+        </div>
+    </div>
+         
+            </div>
       </div>
   </div>
   <footer>
